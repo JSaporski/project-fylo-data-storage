@@ -132,13 +132,14 @@ img {
   text-transform: uppercase;
 }
 
-.data-storage p {
+.data-storage h2 {
   margin-bottom: 15px;
   font-size: 0.988em;
+  font-weight: 400;
   color: hsl(243, 100%, 93%);
 }
 
-.data-storage p span {
+.data-storage h2 span {
   font-weight: 700;
 }
 
@@ -231,7 +232,7 @@ img {
     display: none;
   }
 
-  .data-storage p {
+  .data-storage h2 {
     text-align: center;
   }
 }
