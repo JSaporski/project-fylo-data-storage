@@ -1,0 +1,237 @@
+/* GENERAL STYLES */
+
+:root {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  background: url("../img/bg-desktop.png") no-repeat hsl(229, 57%, 11%);
+  background-position: bottom -7rem left 0;
+  background-size: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  max-width: 960px;
+  margin: 60px 20px;
+  display: grid;
+  grid-template-columns: 360px 540px;
+  gap: 30px;
+}
+
+.header,
+.data-storage {
+  background: hsl(228, 56%, 26%);
+}
+
+.header {
+  padding: 40px 0 40px 40px;
+  border-radius: 10px 95px 10px 10px;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-nav li {
+  background: hsl(229, 57%, 11%);
+  border-radius: 8px;
+  transition: 0.3s ease-out;
+}
+
+.header-nav li a {
+  display: flex;
+  width: 44px;
+  height: 44px;
+}
+
+.header-nav li:hover {
+  background: hsl(229, 47%, 7%);
+}
+
+.header-nav li a img {
+  margin: 0 auto;
+  align-self: center;
+}
+
+.data-storage {
+  position: relative;
+  align-self: end;
+  display: grid;
+  padding: 35px 40px 40px 40px;
+  border-radius: 10px;
+}
+
+.data-count {
+  position: absolute;
+  top: -45px;
+  right: 40px;
+  padding: 25px;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: hsl(243, 100%, 93%);
+  border-radius: 10px 10px 0 10px;
+}
+
+.data-count:after {
+  content: "";
+  clip-path: polygon(49% 49%, 100% 100%, 100% 48%);
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 42px;
+  right: 0;
+  background: hsl(243, 100%, 93%);
+}
+
+.data-count span:first-child {
+  font-size: 2.571em;
+  font-weight: 700;
+  line-height: 0;
+  color: hsl(229, 57%, 11%);
+}
+
+.data-count span:nth-child(2) {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: hsl(229, 7%, 55%);
+  text-transform: uppercase;
+}
+
+.data-storage p {
+  margin-bottom: 15px;
+  font-size: 0.988em;
+  color: hsl(243, 100%, 93%);
+}
+
+.data-storage p span {
+  font-weight: 700;
+}
+
+.storage-bar {
+  height: 20px;
+  padding: 3px;
+  background: #151e47;
+  border-radius: 15px;
+}
+
+.actual-storage {
+  display: grid;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(80deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 15px;
+}
+
+.actual-storage:after {
+  content: "";
+  display: block;
+  margin-right: 3px;
+  align-self: center;
+  justify-self: end;
+  width: 10px;
+  height: 10px;
+  background: hsl(243, 100%, 93%);
+  border-radius: 50%;
+}
+
+.storage-count {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.storage-count span {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: hsl(243, 100%, 93%);
+}
+
+@media only screen and (min-width: 630px) and (max-width: 960px) {
+  body {
+    background-position: bottom 0rem left 0;
+  }
+
+  .main-content {
+    max-width: 600px;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .header {
+    padding: 40px 30px 40px 30px;
+  }
+}
+
+@media only screen and (max-width: 629px) {
+  body {
+    background: url("../img/bg-mobile.png") no-repeat hsl(229, 57%, 11%);
+    background-position: left -2rem;
+    background-size: cover;
+  }
+
+  .main-content {
+    max-width: 600px;
+    grid-template-columns: minmax(290px, 340px);
+    gap: 20px;
+  }
+
+  .header {
+    padding: 40px 30px 40px 30px;
+  }
+
+  .data-storage {
+    padding: 35px 40px 0px 40px;
+  }
+
+  .data-count {
+    position: relative;
+    justify-self: center;
+    order: 2;
+    top: 30px;
+    right: 0;
+    border-radius: 10px;
+  }
+
+  .data-count:after {
+    display: none;
+  }
+
+  .data-storage p {
+    text-align: center;
+  }
+}
