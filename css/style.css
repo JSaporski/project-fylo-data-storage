@@ -16,9 +16,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Raleway", sans-serif;
-  background: url("../img/bg-desktop.png") no-repeat hsl(229, 57%, 11%);
-  background-position: bottom -7rem left 0;
-  background-size: contain;
+  background: url("../img/bg-desktop.png") no-repeat bottom hsl(229, 57%, 11%);
+  background-size: 100% 50%;
 }
 
 a {
@@ -103,7 +102,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: hsl(243, 100%, 93%);
+  background: #fff;
   border-radius: 10px 10px 0 10px;
 }
 
@@ -115,7 +114,7 @@ img {
   position: absolute;
   top: 42px;
   right: 0;
-  background: hsl(243, 100%, 93%);
+  background: #fff;
 }
 
 .data-count span:first-child {
@@ -184,10 +183,6 @@ img {
 }
 
 @media only screen and (min-width: 630px) and (max-width: 960px) {
-  body {
-    background-position: bottom 0rem left 0;
-  }
-
   .main-content {
     max-width: 600px;
     grid-template-columns: 1fr 2fr;
@@ -201,7 +196,6 @@ img {
 @media only screen and (max-width: 629px) {
   body {
     background: url("../img/bg-mobile.png") no-repeat hsl(229, 57%, 11%);
-    background-position: left -2rem;
     background-size: cover;
   }
 
