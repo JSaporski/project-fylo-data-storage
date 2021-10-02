@@ -95,7 +95,7 @@ img {
   display: grid;
   padding: 40px 40px 40px 40px;
   border-radius: 10px;
-  box-shadow: 0 20px 30px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.1);
 }
 
 .data-count {
