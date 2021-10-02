@@ -36,7 +36,7 @@ img {
 /* MAIN CONTENT */
 
 .main-content {
-  width: 930px;
+  width: 935px;
   margin: 60px 20px;
   display: grid;
   grid-template-columns: minmax(360px, 1fr) minmax(360px, 2fr);
