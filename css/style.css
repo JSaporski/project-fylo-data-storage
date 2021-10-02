@@ -51,6 +51,7 @@ img {
 .header {
   padding: 40px 0 40px 40px;
   border-radius: 10px 95px 10px 10px;
+  box-shadow: 0 20px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -91,6 +92,7 @@ img {
   display: grid;
   padding: 35px 40px 40px 40px;
   border-radius: 10px;
+  box-shadow: 0 20px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
 .data-count {
