@@ -161,6 +161,7 @@ img {
   height: 100%;
   background: linear-gradient(80deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   border-radius: 15px;
+  animation: storageLoading 2s ease-out;
 }
 
 .actual-storage:after {
@@ -186,6 +187,16 @@ img {
   font-size: 0.9em;
   font-weight: 700;
   color: hsl(243, 100%, 93%);
+}
+
+@keyframes storageLoading {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 791px) {
